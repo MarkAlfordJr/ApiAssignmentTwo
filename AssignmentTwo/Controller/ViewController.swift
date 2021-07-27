@@ -38,6 +38,7 @@ class ViewController: UITableViewController {
         
         //registers the Custom View, call its xib file and reusable id
         tableView.register(UINib(nibName: "UserInfoTableViewCell", bundle: nil), forCellReuseIdentifier: "customUserCell")
+        
     }
 
 
@@ -50,12 +51,12 @@ class ViewController: UITableViewController {
 
     }
     
-    
+
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         //fixed hight of the cell
-        return 250.0
+        return 300.0
     }
-    
+
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
